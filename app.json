@@ -1,0 +1,29 @@
+{
+  "name": "salesforce-cli-test",
+  "version": "1.0.0",
+  "description": "Test application for the salesforce-cli-buildpack",
+  "repository": "https://github.com/wadewegner/salesforce-cli-test",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wadewegner/salesforce-cli-test/issues"
+  },
+  "homepage": "https://github.com/wadewegner/salesforce-cli-test#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "buildpacks": [{
+      "url": "https://github.com/wadewegner/salesforce-cli-buildpack"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 0
+    },
+    "worker" : {
+      "quantity": 1
+    }
+  }
+}
